@@ -1,0 +1,1 @@
+<h1>Página de estilos de tatuagens</h1>
