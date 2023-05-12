@@ -26,7 +26,7 @@
 }
 
 #linha-card{
-    margin-top: -12%;
+    margin-top: -200px;
 }
 
 .card{
@@ -158,6 +158,11 @@ footer h1{
         display: block;
     }
 
+    .menu-mobile-icon img{
+        width: 24px;
+        height: 24px;
+    }
+
     .menu-mobile-icon button{
         background: transparent;
         border: none;
@@ -176,9 +181,10 @@ footer h1{
 
     .menu-mobile .nav-item a{
         color: #fff;
+        font-size: 130%;
     }
 
     .open{
-        display: block;
+        display: none;
     }
 }
