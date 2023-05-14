@@ -18,9 +18,12 @@ class SiteController extends Controller
         return view("home");
     }
 
-    public function styleView()
+    public function styleView(Request $request)
     {
-        $estilosFiltrados = Estilo::where('id_estilo')->orderBy('id', 'desc')->get();
+        $id_estilo = $request -> input('id_estilo');
+        $estiloFiltrado = Estilo::find($id_estilo);
+        //CRIAR QUERY DE IMAGENS
+        //$estiloImagem = Imagens::where('');
         return view("style");
     }
 
