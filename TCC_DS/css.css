@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+div #logo {
+    background: url(fotos/logo/logoVenegas.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 23vmin;
+    height: 14vmin;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 3vmin;
+
+}
+#img-capa {
+    background: url(fotos/capas/div-capa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 85vmin;
+    height: 75vmin;
+
+}
+
+.branco {
+    color: white;   
+}
+.fundo-branco {
+    background-color: rgb(245, 245, 245);
+    color: black;
+}
+
+
+#text-header, p#text-header{
+    font-size:7vmin;
+}
+#text-header {
+    justify-content: center;
+    align-items: center;    
+}
+section {
+    width: 100%;
+    height: 75vh;
+    font-size: 2.7vmin;
+}
+
+#branco-img {
+    background: url(fotos/section/fundoBranco.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 35vmin;
+    height: 100%;
+}
+#preto-img {
+    background: url(fotos/section/img-fundo-pret.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 35vmin;
+    height: 100%;
+}
+@media only screen and (max-width: 1312px) {
+   #cabecalho {
+    justify-content: center;
+   }
+  }
+
+  footer, i, h1{
+    color: #fff;
+  }
