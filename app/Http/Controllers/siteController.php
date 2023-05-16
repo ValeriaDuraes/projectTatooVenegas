@@ -11,7 +11,6 @@ class SiteController extends Controller
 
     public function homeView()
     {
-
         $estilos = Estilo::all();
         $lastjobs = Tatto::limit(6)->orderBy('id_tatto', 'desc')->get();
 
@@ -21,9 +20,12 @@ class SiteController extends Controller
         ]);
     }
 
-    public function styleView()
+    public function styleView(Request $request)
     {
-        $estilosFiltrados = Estilo::where('id_estilo')->orderBy('id', 'desc')->get();
+        $id_estilo = $request -> input('id_estilo');
+        $estiloFiltrado = Estilo::find($id_estilo);
+        //CRIAR QUERY DE IMAGENS
+        //$estiloImagem = Imagens::where('');
         return view("style");
     }
 
