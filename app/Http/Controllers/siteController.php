@@ -14,8 +14,11 @@ class SiteController extends Controller
 
         $estilos = Estilo::all();
         $lastjobs = Tatto::limit(6)->orderBy('id_tatto', 'desc')->get();
-        dd($lastjobs);
-        return view("home");
+
+        return view("home", [
+            'estilos' => $estilos,
+            'lastjobs' => $lastjobs,
+        ]);
     }
 
     public function styleView()
