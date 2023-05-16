@@ -11,7 +11,6 @@ class SiteController extends Controller
 
     public function homeView()
     {
-
         $estilos = Estilo::all();
         $lastjobs = Tatto::limit(6)->orderBy('id_tatto', 'desc')->get();
         dd($lastjobs);
