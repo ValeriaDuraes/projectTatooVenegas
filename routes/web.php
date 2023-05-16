@@ -6,7 +6,7 @@ use App\Http\Controllers\SiteController;
 
 Route::get('/', [SiteController::class, 'homeView']);
 
-Route::get('/style', [SiteController::class, 'styleView']);
+Route::get('/style/{id}', [SiteController::class, 'styleView']);
 
 Route::get('/comments', [SiteController::class, 'commentsView']);
 

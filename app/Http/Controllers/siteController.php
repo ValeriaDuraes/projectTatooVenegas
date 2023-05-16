@@ -12,26 +12,25 @@ class SiteController extends Controller
     public function homeView()
     {
         $estilos = Estilo::all();
-        $lastjobs = Tatto::limit(6)->orderBy('id_tatto', 'desc')->get();
+        $tattoos = Tatto::limit(6)->orderBy('id_tatto', 'desc')->get();
 
         return view("home", [
             'estilos' => $estilos,
-            'lastjobs' => $lastjobs,
+            'tattoos' => $tattoos,
         ]);
     }
 
-    public function styleView(Request $request)
+    public function styleView(int $id )
     {
-        $id_estilo = $request -> input('id_estilo');
-        $estiloFiltrado = Estilo::find($id_estilo);
-        //CRIAR QUERY DE IMAGENS
-        //$estiloImagem = Imagens::where('');
-        return view("style");
+        $estiloFiltrado = Estilo::find($id);
+        if ($estiloFiltrado == Null) return redirect("/");
+        return view("style",[
+            'estilos' => $estiloFiltrado
+        ]);
     }
 
     public function aboutView()
     {
-        // Alteração de registros
         return view("about");
     }
 

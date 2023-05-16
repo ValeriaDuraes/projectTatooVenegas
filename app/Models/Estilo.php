@@ -13,7 +13,7 @@ class Estilo extends Model
     protected $primaryKey = 'id_estilo';
     public $timestamps = false;
 
-    public function tatto():HasMany
+    public function tattos():HasMany
     {
         return $this->hasMany(Tatto::class, 'fk_id_estilo');
     }
