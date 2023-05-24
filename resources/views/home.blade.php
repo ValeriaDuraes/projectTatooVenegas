@@ -14,26 +14,13 @@
 
     <section>
         <div class="card">
-            <a href="/style/1">
-                <img class="img-card" src="https://tattoo.ind.br/wp-content/uploads/2022/04/tatuagem-old-school-10-1024x1024.jpg" alt="">
-                <h2>Old School</h2>
+            @foreach ($estilos as $estilo)
+            <a href="/style/{{$estilo->id_estilo}}">
+                <img class="img-card" src="{{ $estilo->img }}" alt="">
+                <h2>{{$estilo->nome_estilo}}</h2>
                 <p>Ver mais...</p>
             </a>
-            <a href="/style/2">
-                <img class="img-card" src="https://i.pinimg.com/564x/68/96/91/68969146bc7d5eae21f9b37d1216c8ca.jpg" alt="">
-                <h2>Tribal</h2>
-                <p>Ver mais...</p>
-            </a>
-            <a href="">
-                <img class="img-card" src="https://i.pinimg.com/564x/0d/66/87/0d6687b1d2c3f789e1a8d6c0b81050ef.jpg" alt="">
-                <h2>Sketch work</h2>
-                <p>Ver mais...</p>
-            </a>
-            <a href="">
-                <img class="img-card" src="https://i.pinimg.com/564x/25/63/9b/25639b67c217d4183f364b277b209ba9.jpg" alt="">
-                <h2>Realismo</h2>
-                <p>Ver mais...</p>
-            </a>
+            @endforeach
         </div>
     </section>
 

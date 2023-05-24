@@ -22,10 +22,10 @@ class SiteController extends Controller
 
     public function styleView(int $id )
     {
-        $estiloFiltrado = Estilo::find($id);
-        if ($estiloFiltrado == Null) return redirect("/");
+        $estilo = Estilo::find($id);
+        if ($estilo == Null) return redirect("/");
         return view("style",[
-            'estilos' => $estiloFiltrado
+            'estilo' => $estilo
         ]);
     }
 
