@@ -170,6 +170,7 @@ footer .sociais i{
     padding: 20px;
     border-radius: 30px;
     background: #f2f2ff;
+    box-shadow: 2px 2px 3.2px rgba(0, 0, 0, 0.25);
 }
 
 .history .title-history{
@@ -191,6 +192,12 @@ footer .sociais i{
     border-radius: 20px;
     background: #f2f2ff;
     padding: 15px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
+}
+
+.links a:hover{
+    color: #A6A6FF;
+    transition: .2s;
 }
 
 @media screen and (max-width:720px){
