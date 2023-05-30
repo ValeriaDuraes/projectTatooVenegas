@@ -13,10 +13,10 @@ class SiteController extends Controller
     public function homeView()
     {
         $estilos = Estilo::all();
-        $tattoo = Tatto::limit(6)->orderBy('id_tatto','desc')->get();
+        $tattoo = Tatto::limit(6)->orderBy('id_tatto', 'desc')->get();
         //$imagens = $tattoo->imagens->first();
 
-        dd($tattoo->get(4));
+        // dd($tattoo->get(4));
 
         return view("home", [
             'estilos' => $estilos,
@@ -24,11 +24,11 @@ class SiteController extends Controller
         ]);
     }
 
-    public function styleView(int $id )
+    public function styleView(int $id)
     {
         $estilo = Estilo::find($id);
         if ($estilo == Null) return redirect("/");
-        return view("style",[
+        return view("style", [
             'estilo' => $estilo
         ]);
     }
