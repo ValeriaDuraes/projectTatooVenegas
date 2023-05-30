@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Estilo;
 use Illuminate\Http\Request;
 use App\Models\Tatto;
+use App\Models\Imagens;
 
 class SiteController extends Controller
 {
@@ -12,11 +13,14 @@ class SiteController extends Controller
     public function homeView()
     {
         $estilos = Estilo::all();
-        $tattoos = Tatto::limit(6)->orderBy('id_tatto', 'desc')->get();
+        $tattoo = Tatto::limit(6)->orderBy('id_tatto','desc')->get();
+        //$imagens = $tattoo->imagens->first();
+
+        dd($tattoo->get(4));
 
         return view("home", [
             'estilos' => $estilos,
-            'tattoos' => $tattoos,
+            'tattoos' => $tattoo,
         ]);
     }
 

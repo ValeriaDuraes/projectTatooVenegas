@@ -11,6 +11,7 @@ class Tatto extends Model
 {
     use HasFactory;
     protected $table = 'tatto';
+    protected $primaryKey = 'id_tatto';
     public $timestamp = false;
 
     public function estilo(): BelongsTo

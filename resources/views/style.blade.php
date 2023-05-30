@@ -21,7 +21,7 @@
     </div>
 
     <div class="links">
-        <a href="https://br.pinterest.com/search/pins/?q=tattoo%20old%20school&rs=rs&eq=&etslf=1992" target="_blank">Old School</a>
+        <a href={{$estilo->link}} target="_blank">{{$estilo->nome_estilo}}</a>
     </div>
 
     </body>
