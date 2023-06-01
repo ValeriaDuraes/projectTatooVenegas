@@ -99,8 +99,16 @@ header nav, li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     background: #000;
+}
+
+.container-work .img-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 840px;
 }
 
 .container-work h1 {
@@ -166,11 +174,11 @@ footer .sociais i{
     justify-content: center;
     flex-direction: column;
     text-align: justify;
-    margin: 50px;
-    padding: 20px;
+    margin: 50px auto;
+    padding: 30px;
     border-radius: 30px;
-    background: #f2f2ff;
-    box-shadow: 2px 2px 3.2px rgba(0, 0, 0, 0.25);
+    max-width: 1400px;
+    box-shadow: -1px 4px 36px -7px rgba(0, 0, 0, 0.25);
 }
 
 .history .title-history{
@@ -190,9 +198,8 @@ footer .sociais i{
     width: 200px;
     justify-content: center;
     border-radius: 20px;
-    background: #f2f2ff;
     padding: 15px;
-    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
+    box-shadow: -1px 4px 36px -7px rgba(0, 0, 0, 0.25);
 }
 
 .links a:hover{
@@ -207,6 +214,7 @@ footer .sociais i{
     }
     
     .menu-mobile-icon{
+        margin: 20px;
         display: block;
     }
 

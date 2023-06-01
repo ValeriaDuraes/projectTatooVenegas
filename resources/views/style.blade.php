@@ -1,19 +1,4 @@
 <x-layout>
-
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Document</title>
-    </head>
-    <body>
-        
     <h1 class="title">{{$estilo->nome_estilo}}</h1>
 
     <div class="history">
@@ -23,8 +8,4 @@
     <div class="links">
         <a href="https://br.pinterest.com/search/pins/?q=tattoo%20old%20school&rs=rs&eq=&etslf=1992" target="_blank">Old School</a>
     </div>
-
-    </body>
-    </html>
-
 </x-layout>

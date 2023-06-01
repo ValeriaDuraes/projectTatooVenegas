@@ -17,8 +17,8 @@
     
             <ul>
                 <li><a href="/about">Portfólio</a></li>
-                <li><a href="">Projetos</a></li>
-                <li><a href="/about">Feedbacks</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="/">Feedbacks</a></li>
                 <li><a href="">Contatos</a></li>
             </ul>
     
@@ -29,8 +29,8 @@
     
         <div class="menu-mobile">
             <ul>
-                <li><a href="">Portfólio</a></li>
-                <li><a href="">Projetos</a></li>
+                <li><a href="/about">Portfólio</a></li>
+                <li><a href="#projetos">Projetos</a></li>
                 <li><a href="">Feedbacks</a></li>
                 <li><a href="">Contatos</a></li>
             </ul>
