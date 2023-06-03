@@ -1,57 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
-    background-color: black;
-    font-family: 'Poppins', sans-serif;
 }
-
+body{
+    background: black;
+}
+#cabecalho{
+    height: 130px;
+}
 div #logo {
-    background: url(fotos/logo/logoVenegas.png);
+    background: url(fotos/logo/logoVenegas.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-width: 23vmin;
+    min-width: 13vmin;
     height: 14vmin;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-    font-size: 2vmin;
-
-}
 #img-capa {
     background: url(fotos/capas/div-capa.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-width: 85vmin;
-    height: 75vmin;
+    min-width: 65vmin;
+    height: 55vmin;
 
 }
 
 .branco {
-    color: white;   
+    color: white;
 }
+
 .fundo-branco {
     background-color: rgb(245, 245, 245);
     color: black;
 }
 
-
-#text-header, p#text-header{
-    font-size:7vmin;
+#text-header p {
+    font-size: 6vmin;
 }
+
 #text-header {
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
+
 section {
     width: 100%;
-    height: 75vh;
+    height: 65vh;
+}
+p {
     font-size: 1.90vmin;
 }
 
@@ -60,23 +62,27 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-width: 35vmin;
+    min-width: 30vmin;
     height: 100%;
 }
+
 #preto-img {
     background: url(fotos/section/img-fundo-pret.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    min-width: 35vmin;
+    min-width: 30vmin;
     height: 100%;
 }
-@media only screen and (max-width: 1312px) {
-   #cabecalho {
-    justify-content: center;
-   }
-  }
 
-  footer, i, h1{
-    color: #fff;
-  }
+@media only screen and (max-width: 1312px) {
+    #titulo {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width:750px ){
+    p{
+        font-size: 100%;
+    }
+
+}

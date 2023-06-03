@@ -31,6 +31,4 @@
         </div>
 
     </section>
-
-    <script src="script.js"></script>
 </x-layout>

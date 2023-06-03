@@ -5,10 +5,13 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-header {
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+#cabecalho {
     background-image: url(img/banner-2.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -17,11 +20,17 @@ header {
     width: 100%;
 }
 
+
 header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.303);
+    backdrop-filter: blur(4px);
 }
 
 nav ul{

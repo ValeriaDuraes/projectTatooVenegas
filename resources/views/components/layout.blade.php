@@ -11,15 +11,15 @@
 <body>
     
     <header id="cabecalho">
-        <nav>
+        <nav >
             <a href="/" class="logo"><img src="/img/logo.png" alt=""></a>
             
     
             <ul>
+                <li><a href="/">Home</a></li>
                 <li><a href="/about">Portfólio</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="/">Feedbacks</a></li>
-                <li><a href="">Contatos</a></li>
+                <li><a href="#projetos">Projetos</a></li>               
+                <li><a href="">Feedback</a></li>
             </ul>
     
             <div class="menu-mobile-icon">
@@ -29,17 +29,17 @@
     
         <div class="menu-mobile">
             <ul>
+                <li><a href="/">Home</a></li>
                 <li><a href="/about">Portfólio</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="">Feedbacks</a></li>
-                <li><a href="">Contatos</a></li>
+                <li><a href="#projetos">Projetos</a></li>             
+                <li><a href="">Feedback</a></li>
             </ul>
         </div>
     </header>
 
-    <section id="main">
+    <main id="main">
         {{ $slot }}
-    </section>
+    </main>
 
 
     <footer id="footer">
@@ -53,5 +53,7 @@
             </a>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
