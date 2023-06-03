@@ -27,6 +27,7 @@ class SiteController extends Controller
     public function styleView(int $id)
     {
         $estilo = Estilo::find($id);
+        $tattoo = Tatto::find($id);
         if ($estilo == Null) return redirect("/");
         return view("style", [
             'estilo' => $estilo
