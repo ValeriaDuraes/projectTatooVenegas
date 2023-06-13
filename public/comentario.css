@@ -1,0 +1,53 @@
+#cabecalho{
+    height: 130px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+}
+
+.container-comentarios{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-evenly; 
+    align-items: center;
+    gap:30px;
+
+}
+.card-comentario{
+    background-color:#9f9f9f4f;
+    min-width:120px;
+    max-width: 375px;
+    max-height: 340px;
+    height: auto;
+    border-radius: 12px;
+    text-align: center;
+    border: #ffffff14 solid 1px;
+    padding: 40px 10px;
+    margin: 15px;
+    padding: 15px;
+}
+.foto {
+    width: 27%;
+    height: 12%;
+    border-radius: 100%;
+    padding: 5px;
+    margin-bottom: 13px;
+}
+.estrelas img {
+    width: 18px;
+    height: 18px;
+    margin: 3px;
+}
+
+.texto{
+    text-align: inherit;
+    color: white;
+    
+  
+}

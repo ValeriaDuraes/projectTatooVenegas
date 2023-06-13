@@ -28,9 +28,11 @@ class SiteController extends Controller
     {
         $estilo = Estilo::find($id);
         $tattoo = Tatto::find($id);
+        $tattoosRecentes=$estilo->tattos->sortByDesc("id")->take(3);
         if ($estilo == Null) return redirect("/");
         return view("style", [
-            'estilo' => $estilo
+            'estilo' => $estilo,
+            'tattoosRecentes' => $tattoosRecentes
         ]);
     }
 
