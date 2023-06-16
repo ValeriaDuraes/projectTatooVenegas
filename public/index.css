@@ -238,6 +238,10 @@ footer .sociais i{
         align-items: center;
         padding: 30px;
         backdrop-filter: blur(6px);
+        height: 100%;
+        position: fixed;
+        width: 100%;
+        top: 146px;
     }
 
     .menu-mobile li{

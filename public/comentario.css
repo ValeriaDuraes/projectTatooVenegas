@@ -8,22 +8,22 @@
 }
 
 body{
-    background: black;
+   background-color: rgb(0, 0, 0);
 }
 
 .container-comentarios{
     display: flex;
-    flex-wrap: wrap;  
-    justify-content: space-evenly; 
+    flex-wrap: wrap;
     align-items: center;
-    gap:30px;
+    justify-content: center;
+    margin: 2% 10%;
+    gap: 55px;
 
 }
 .card-comentario{
-    background-color:#9f9f9f4f;
-    min-width:120px;
-    max-width: 375px;
-    max-height: 340px;
+    background-color:#9f9f9f2e;
+    min-width:130px;
+    max-width: 290px;
     height: auto;
     border-radius: 12px;
     text-align: center;
@@ -31,18 +31,21 @@ body{
     padding: 40px 10px;
     margin: 15px;
     padding: 15px;
+    gap:10px;
 }
 .foto {
     width: 27%;
-    height: 12%;
+    height: 55px;
     border-radius: 100%;
     padding: 5px;
     margin-bottom: 13px;
+    object-fit: cover;
 }
 .estrelas img {
     width: 18px;
     height: 18px;
     margin: 3px;
+    object-fit: cover;
 }
 
 .texto{
