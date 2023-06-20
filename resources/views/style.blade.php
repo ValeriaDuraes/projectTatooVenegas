@@ -13,6 +13,6 @@
     </div>
     </div>
     <div class="links">
-        <a href={{$estilo->link}} target="_blank">Saiba mais!</a>
+        <a href={{$estilo->link}} target="_blank">Veja mais!</a>
     </div>
 </x-layout>
